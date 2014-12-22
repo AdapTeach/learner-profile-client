@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     jasmine = require('jasmine-node'),
     nodemon = require('gulp-nodemon');
 
-var pathToSrc = [ 'src/**/*.js', 'gulpfile.js'],
+var pathToSrc = [ 'src/**/*.js', 'gulpfile.js', 'test'],
     pathToTests = 'test/';
 
 gulp.task('default', ['dev'], function () {
@@ -24,4 +24,10 @@ gulp.task('lint', function () {
             strict: false
         }))
         .pipe(jshint.reporter('jshint-stylish'));
+});
+
+gulp.task('tests',function(){
+    gulp.src(pathToTests)
+        .pipe(lint)
+        .pipe(jasmine())
 });
