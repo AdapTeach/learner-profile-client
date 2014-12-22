@@ -1,4 +1,4 @@
-var verifier = require('./lib/verifier');
+var verifier = require('./verifier');
 
 var authMiddleware = {};
 

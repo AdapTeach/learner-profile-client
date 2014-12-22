@@ -44,6 +44,9 @@
 29 silly publish   description: '',
 29 silly publish   main: 'src/index.js',
 29 silly publish   directories: { test: 'test' },
+29 silly publish   repository:
+29 silly publish    { url: 'https://github.com/AdapTeach/learner-profile-client',
+29 silly publish      type: 'Git' },
 29 silly publish   dependencies: { q: '^1.1.2', 'q-io': '^1.11.6' },
 29 silly publish   devDependencies:
 29 silly publish    { gulp: '^3.8.10',
@@ -52,7 +55,6 @@
 29 silly publish      'gulp-jshint': '^1.9.0',
 29 silly publish      'gulp-nodemon': '^1.0.4',
 29 silly publish      'gulp-uglify': '^1.0.2',
-29 silly publish      'jasmine-node': '^1.14.5',
 29 silly publish      'jasmine-reporters': '^2.0.3',
 29 silly publish      'jshint-stylish': '^1.0.0' },
 29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
@@ -61,16 +63,56 @@
 29 silly publish      email: 'charles.jacquin@autistici.org',
 29 silly publish      url: 'https://github.com/Charl---' },
 29 silly publish   license: 'MIT',
+29 silly publish   gitHead: '7ffeb324d337c97adad7c6847da5ed21a9e84555',
+29 silly publish   bugs: { url: 'https://github.com/AdapTeach/learner-profile-client/issues' },
 29 silly publish   readme: 'ERROR: No README data found!',
+29 silly publish   homepage: 'https://github.com/AdapTeach/learner-profile-client',
 29 silly publish   _id: 'learner-profile-client@1.0.0',
-29 silly publish   _shasum: 'f6420243fa0aadd535c21feda3b29d7e9931c9e8',
+29 silly publish   _shasum: '05901418d710160bad1a0b5c8009a1fae754cc7e',
 29 silly publish   _from: './' }
-30 error need auth auth and email required for publishing
-30 error need auth You need to authorize this machine using `npm adduser`
-31 error System Linux 3.13.0-24-generic
-32 error command "/usr/bin/node" "/usr/bin/npm" "publish" "./"
-33 error cwd /home/charl/Workspace/WebstormProjects/learner-profile-client
-34 error node -v v0.10.34
-35 error npm -v 1.4.28
-36 error code ENEEDAUTH
-37 verbose exit [ 1, true ]
+30 verbose request where is /learner-profile-client
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id e5892d81d751b6e4
+33 verbose url raw /learner-profile-client
+34 verbose url resolving [ 'https://registry.npmjs.org/', './learner-profile-client' ]
+35 verbose url resolved https://registry.npmjs.org/learner-profile-client
+36 verbose request where is https://registry.npmjs.org/learner-profile-client
+37 info trying registry request attempt 1 at 15:01:07
+38 http PUT https://registry.npmjs.org/learner-profile-client
+39 http 403 https://registry.npmjs.org/learner-profile-client
+40 verbose headers { date: 'Mon, 22 Dec 2014 14:01:08 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '3047',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1419256867.909739,VS0,VE599',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 1.0.0
+42 error old={"name":"learner-profile-client","version":"1.0.0","description":"","main":"src/index.js","directories":{"test":"test"},"repository":{"url":"https://github.com/AdapTeach/learner-profile-client","type":"Git"},"dependencies":{"q":"^1.1.2","q-io":"^1.11.6"},"devDependencies":{"gulp":"^3.8.10","gulp-jasmine":"^1.0.1","gulp-concat-util":"^0.5.1","gulp-jshint":"^1.9.0","gulp-nodemon":"^1.0.4","gulp-uglify":"^1.0.2","jasmine-node":"^1.14.5","jasmine-reporters":"^2.0.3","jshint-stylish":"^1.0.0"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":{"name":"Charles Jacquin","email":"charles.jacquin@autistici.org","url":"https://github.com/Charl---"},"license":"MIT","gitHead":"59530beafac44279353db695c9e136273f57b1bd","bugs":{"url":"https://github.com/AdapTeach/learner-profile-client/issues"},"homepage":"https://github.com/AdapTeach/learner-profile-client","_id":"learner-profile-client@1.0.0","_shasum":"b3def927b56fc16e75bb0f5981f6b992ffa08dc0","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"chazz","email":"charles.jacquin@autistici.org"},"maintainers":[{"name":"chazz","email":"charles.jacquin@autistici.org"}],"dist":{"shasum":"b3def927b56fc16e75bb0f5981f6b992ffa08dc0","tarball":"http://registry.npmjs.org/learner-profile-client/-/learner-profile-client-1.0.0.tgz"}}
+42 error new={"name":"learner-profile-client","version":"1.0.0","description":"","main":"src/index.js","directories":{"test":"test"},"repository":{"url":"https://github.com/AdapTeach/learner-profile-client","type":"Git"},"dependencies":{"q":"^1.1.2","q-io":"^1.11.6"},"devDependencies":{"gulp":"^3.8.10","gulp-jasmine":"^1.0.1","gulp-concat-util":"^0.5.1","gulp-jshint":"^1.9.0","gulp-nodemon":"^1.0.4","gulp-uglify":"^1.0.2","jasmine-reporters":"^2.0.3","jshint-stylish":"^1.0.0"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":{"name":"Charles Jacquin","email":"charles.jacquin@autistici.org","url":"https://github.com/Charl---"},"license":"MIT","gitHead":"7ffeb324d337c97adad7c6847da5ed21a9e84555","bugs":{"url":"https://github.com/AdapTeach/learner-profile-client/issues"},"readme":"ERROR: No README data found!","homepage":"https://github.com/AdapTeach/learner-profile-client","_id":"learner-profile-client@1.0.0","_shasum":"05901418d710160bad1a0b5c8009a1fae754cc7e","_from":"./","_npmVersion":"1.4.28","_npmUser":{"name":"chazz","email":"charles.jacquin@autistici.org"},"maintainers":[{"name":"chazz","email":"charles.jacquin@autistici.org"}],"dist":{"shasum":"05901418d710160bad1a0b5c8009a1fae754cc7e","tarball":"http://registry.npmjs.org/learner-profile-client/-/learner-profile-client-1.0.0.tgz"}}: learner-profile-client
+42 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+42 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+42 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:442:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Linux 3.13.0-24-generic
+45 error command "/usr/bin/node" "/usr/bin/npm" "publish" "./"
+46 error cwd /home/charl/Workspace/WebstormProjects/learner-profile-client
+47 error node -v v0.10.34
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
