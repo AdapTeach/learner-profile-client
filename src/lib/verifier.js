@@ -1,16 +1,17 @@
-var config = require('../config.js').getOptions(),
+var config = require('../config.js'),
     http = require('q-io/http'),
     q = require('q'),
     authVerifier = {};
 
+
 authVerifier.verify = function (assertion) {
     var options = {
-        url: config.serverUrl+'/login',
+        url: config.getOptions().serverUrl+'/login',
         method: 'POST',
         body: [
             JSON.stringify({
                 assertion: assertion,
-                audience: config.uiClientUrl
+                audience: config.getOptions().uiClientUrl
             })
         ],
         headers: {

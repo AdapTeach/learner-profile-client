@@ -9,7 +9,6 @@ authMiddleware.ensureAuthenticated = function (req, res, next) {
     var token = req.headers.authorization.split(' ')[1];
     verifier.decodeToken(token)
         .then(function(user){
-            console.log('decoded',user);
             req.user = user;
             next();
         });

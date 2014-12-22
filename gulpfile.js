@@ -1,10 +1,11 @@
 var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
-    jasmine = require('jasmine-node'),
-    nodemon = require('gulp-nodemon');
+    jasmine = require('gulp-jasmine'),
+    nodemon = require('gulp-nodemon'),
+    stub = require('learner-profile-stub')();
 
 var pathToSrc = [ 'src/**/*.js', 'gulpfile.js', 'test'],
-    pathToTests = 'test/';
+    pathToTests = 'test/**/*';
 
 gulp.task('default', ['dev'], function () {
 });
@@ -27,7 +28,7 @@ gulp.task('lint', function () {
 });
 
 gulp.task('tests',function(){
+    stub.start();
     gulp.src(pathToTests)
-        .pipe(lint)
         .pipe(jasmine())
 });
