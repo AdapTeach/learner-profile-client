@@ -20,5 +20,5 @@ module.exports = {
         }
 
     },
-    middleWare: require('./lib/middleware')
+    middleware: require('./lib/middleware')
 };
