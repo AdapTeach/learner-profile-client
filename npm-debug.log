@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish', './' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.34
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ './' ]
+6 verbose cache add [ './', null ]
+7 verbose cache add name=undefined spec="./" args=["./",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: './',
+8 verbose parsed url   path: './',
+8 verbose parsed url   href: './' }
+9 silly lockFile 0ee6c175- ./
+10 verbose lock ./ /home/charl/.npm/0ee6c175-.lock
+11 verbose tar pack [ '/home/charl/.npm/learner-profile-client/1.0.0/package.tgz',
+11 verbose tar pack   './' ]
+12 verbose tarball /home/charl/.npm/learner-profile-client/1.0.0/package.tgz
+13 verbose folder ./
+14 info prepublish learner-profile-client@1.0.0
+15 silly lockFile 04cb2bca-tar tar://./
+16 verbose lock tar://./ /home/charl/.npm/04cb2bca-tar.lock
+17 silly lockFile f99bd36f-profile-client-1-0-0-package-tgz tar:///home/charl/.npm/learner-profile-client/1.0.0/package.tgz
+18 verbose lock tar:///home/charl/.npm/learner-profile-client/1.0.0/package.tgz /home/charl/.npm/f99bd36f-profile-client-1-0-0-package-tgz.lock
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 04cb2bca-tar tar://./
+21 silly lockFile f99bd36f-profile-client-1-0-0-package-tgz tar:///home/charl/.npm/learner-profile-client/1.0.0/package.tgz
+22 silly lockFile f99bd36f-profile-client-1-0-0-package-tgz tar:///home/charl/.npm/learner-profile-client/1.0.0/package.tgz
+23 silly lockFile 13598c1a-ner-profile-client-1-0-0-package /home/charl/.npm/learner-profile-client/1.0.0/package
+24 verbose lock /home/charl/.npm/learner-profile-client/1.0.0/package /home/charl/.npm/13598c1a-ner-profile-client-1-0-0-package.lock
+25 silly lockFile 13598c1a-ner-profile-client-1-0-0-package /home/charl/.npm/learner-profile-client/1.0.0/package
+26 silly lockFile 13598c1a-ner-profile-client-1-0-0-package /home/charl/.npm/learner-profile-client/1.0.0/package
+27 silly lockFile 0ee6c175- ./
+28 silly lockFile 0ee6c175- ./
+29 silly publish { name: 'learner-profile-client',
+29 silly publish   version: '1.0.0',
+29 silly publish   description: '',
+29 silly publish   main: 'src/index.js',
+29 silly publish   directories: { test: 'test' },
+29 silly publish   dependencies: { q: '^1.1.2', 'q-io': '^1.11.6' },
+29 silly publish   devDependencies:
+29 silly publish    { gulp: '^3.8.10',
+29 silly publish      'gulp-jasmine': '^1.0.1',
+29 silly publish      'gulp-concat-util': '^0.5.1',
+29 silly publish      'gulp-jshint': '^1.9.0',
+29 silly publish      'gulp-nodemon': '^1.0.4',
+29 silly publish      'gulp-uglify': '^1.0.2',
+29 silly publish      'jasmine-node': '^1.14.5',
+29 silly publish      'jasmine-reporters': '^2.0.3',
+29 silly publish      'jshint-stylish': '^1.0.0' },
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   author:
+29 silly publish    { name: 'Charles Jacquin',
+29 silly publish      email: 'charles.jacquin@autistici.org',
+29 silly publish      url: 'https://github.com/Charl---' },
+29 silly publish   license: 'MIT',
+29 silly publish   readme: 'ERROR: No README data found!',
+29 silly publish   _id: 'learner-profile-client@1.0.0',
+29 silly publish   _shasum: 'f6420243fa0aadd535c21feda3b29d7e9931c9e8',
+29 silly publish   _from: './' }
+30 error need auth auth and email required for publishing
+30 error need auth You need to authorize this machine using `npm adduser`
+31 error System Linux 3.13.0-24-generic
+32 error command "/usr/bin/node" "/usr/bin/npm" "publish" "./"
+33 error cwd /home/charl/Workspace/WebstormProjects/learner-profile-client
+34 error node -v v0.10.34
+35 error npm -v 1.4.28
+36 error code ENEEDAUTH
+37 verbose exit [ 1, true ]

@@ -1,0 +1,29 @@
+{
+  "name": "learner-profile-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "q": "^1.1.2",
+    "q-io": "^1.11.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jasmine": "^1.0.1",
+    "gulp-concat-util": "^0.5.1",
+    "gulp-jshint": "^1.9.0",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-uglify": "^1.0.2",
+    "jasmine-node": "^1.14.5",
+    "jasmine-reporters": "^2.0.3",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles Jacquin <charles.jacquin@autistici.org> (https://github.com/Charl---)",
+  "license": "MIT"
+}
