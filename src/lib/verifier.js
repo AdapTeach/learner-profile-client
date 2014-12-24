@@ -29,7 +29,7 @@ authVerifier.verify = function (assertion) {
 authVerifier.decodeToken = function (token) {
     var deferred = q.defer();
     var options = {
-        url: config.authUrl + '/me',
+        url: config.getOptions().serverUrl + '/me',
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

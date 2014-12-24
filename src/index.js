@@ -1,5 +1,6 @@
 var authVerifier = require('./lib/verifier'),
-    config = require('./config');
+    config = require('./config'),
+    middleware = require('./lib/middleware');
 
 module.exports = function(app,options){
     if(!options){
@@ -19,5 +20,8 @@ module.exports = function(app,options){
                     response.status(500).send(error);
                 });
         });
+        app.get('/me', middleware.ensureAuthenticated,function(request,response){
+            response.json(request.user);
+        })
     }
 };
